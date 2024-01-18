@@ -1,0 +1,37 @@
+   DAY 1: BASIC CODES UNDERSTANDING
+
+
+using System;
+class Student
+{
+   //string datatype(type of data to be stored in a variable)
+   //name variable ( Temporary storage of data in memory)
+ 
+   string name;
+   int age;
+ 
+   public void GetStudentName()
+   {
+       Console.WriteLine("Enter Student Name");
+       name = Console.ReadLine();
+       Console.WriteLine("Enter Age");
+       age= Convert.ToInt32(Console.ReadLine());
+   }
+ 
+   public void PrintStudentName()
+   {
+       Console.WriteLine($"Student name: {name} age: {age}");
+       Console.WriteLine("Student name: {0} age:{1}", name,age);
+ 
+   }
+ 
+}
+
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Hello World");
+    Student student1 = new Student(); // created an object
+    student1.GetStudentName(); //function call
+    student1.PrintStudentName(); // function call
+  }
+}
